@@ -26,7 +26,7 @@ public class DishTvLogin {
 		util.doSendKeys(mobileNumber, "9038168803");
 		util.doSendKeys(password, "tatadocomo");
 		util.doClick(loginBtn);
-		driver.close();
+		
 	}
 
 }

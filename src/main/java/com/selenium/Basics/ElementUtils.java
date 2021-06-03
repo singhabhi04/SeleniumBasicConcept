@@ -3,6 +3,8 @@ package com.selenium.Basics;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ElementUtils {
 	WebDriver driver ;
@@ -53,6 +55,13 @@ public class ElementUtils {
 			 System.out.println("fail to perform click operation :"+e.getMessage());
 		 }
 		
+	 }
+	 public void waitForElementPresent(By locator, int timeOut) {
+		 WebDriverWait wait  = new WebDriverWait(driver,timeOut);
+		 wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+	 }
+	 public void closeBrowser(WebDriver driver) {
+		 
 	 }
 	
 	
