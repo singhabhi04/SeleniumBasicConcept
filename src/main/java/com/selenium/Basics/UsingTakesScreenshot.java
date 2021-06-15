@@ -43,6 +43,7 @@ public class UsingTakesScreenshot {
 		UsingTakesScreenshot.CaptureScreenShotWithTestStepName(driver, "URL Loading");
 		
 		
+		
 
 	}
 }
